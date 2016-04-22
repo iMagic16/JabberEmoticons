@@ -1,0 +1,34 @@
+<emoticons>
+
+  <emoticon defaultKey=":qaclub" image="2.png" text="QAClub" order="100">
+  <alt>QAClub</alt>
+ </emoticon> 
+
+  <emoticon defaultKey=":qa" image="1.png" text="QA" order="101">
+  <alt>QA</alt>
+ </emoticon> 
+ 
+ <emoticon defaultKey=":cisco" image="3.png" text="Cisco" order="102">
+  <alt>(cisco)</alt>
+ </emoticon> 
+ 
+  <emoticon defaultKey=":hifi" image="4.png" text="Speaker" order="103">
+  <alt>(speaker)</alt>
+  <alt>(music)</alt>
+  <alt>(bass)</alt>
+ </emoticon> 
+ 
+  <emoticon defaultKey=":israr" image="5.png" text="Salty" order="104">
+  <alt>(salt)</alt>
+ </emoticon> 
+ 
+  <emoticon defaultKey=":utc" image="6.png" text="UTC Reading" order="106">
+  <alt>(UTC)</alt>
+ </emoticon> 
+ 
+   <emoticon defaultKey=":charley" image="7.png" text="Tired" order="105">
+  <alt>(tired)</alt>
+  <alt>(sleepy)</alt>
+ </emoticon> 
+ 
+ </emoticons>
