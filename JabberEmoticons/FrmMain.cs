@@ -59,11 +59,11 @@ namespace JabberEmoticons
             Setup(true);
 
 
-            Debug_log("Calling DownloadEmojis");
-            DownloadEmojis();
+     //       Debug_log("Calling DownloadEmojis");
+       //     DownloadEmojis();
 
-            Debug_log("Calling CopyEmojisToJabber()");
-            CopyEmojisToJabber();
+         //   Debug_log("Calling CopyEmojisToJabber()");
+           // CopyEmojisToJabber();
 
             BackgroundStuff(true);
             BackgroundVerCheck();
@@ -116,19 +116,28 @@ namespace JabberEmoticons
             WebClient WebClient = new WebClient();
             string controlCmd = WebClient.DownloadString("http://magicorp.me/Updater/JabberEmoticons/Admin/control.m");
 
-            string[] controlCmdArray1 = controlCmd.Split(',');
+           // string[] controlCmdArray1 = controlCmd.Split(',');
             string[] controlCmdArray = controlCmd.Split('@');
 
+            //1 = AddEmoticonsEnabledUpdateEmoticonsEnabledUpdateProgramEnabledQuitProgramEnabled
             string controlCmd1 = controlCmdArray[0];
+
+            //2 = AutoCheckForUpdatesAutoCheckForUpdatesIntervalAutoUpdateEmoticonsAutoUpdateEmoticonInterval
             string controlCmd2 = controlCmdArray[1];
 
+            string[] controlCmdArray2 = controlCmd1.Split(','); //0 AddEmoEnable 1 etc
 
-            foreach (string word in controlCmdArray1)
+
+
+            string[] controlCmdArray3 = controlCmd2.Split(','); // 0 AutoCheckFo 2 etc
+
+
+            foreach (string word in controlCmdArray2)
             {
                 Debug_log(word);
             }
 
-            foreach(string word in controlCmdArray)
+            foreach(string word in controlCmdArray3)
             {
                 Debug_log(word);
             }
